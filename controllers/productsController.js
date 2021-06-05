@@ -11,7 +11,6 @@ exports.postAddProducts = (req, res, next) => {
 };
 
 exports.getProducts = (req, res, next) => {
-
   // res.sendFile(path.join(process.cwd(), 'views', 'shop.html'));
   res.render('shop', { products, pageTitle: 'Shop Page', path: 'shop' });
 }
