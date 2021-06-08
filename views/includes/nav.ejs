@@ -3,7 +3,18 @@
         <nav class="main-header__nav">
             <ul class="main-header__item-list">
                 <li class="main-header__item"><a class="<%= path === 'shop' ? 'active' : '' %>" href="/">Shop</a></li>
-                <li class="main-header__item"><a class="<%= path === 'admin' ? 'active' : '' %>" href="/admin/add-product">Add Product</a></li>
+                <li class="main-header__item">
+                    <a class="<%= path === 'admin' ? 'active' : '' %>" href="/admin/add-product">Add Product</a>
+                </li>
+                 <li class="main-header__item">
+                    <a class="<%= path === 'product' ? 'active' : '' %>" href="/products">Products</a>
+                </li>
+                 <li class="main-header__item">
+                    <a class="<%= path === 'cart' ? 'active' : '' %>" href="/cart">Cart</a>
+                </li>
+                 <li class="main-header__item">
+                    <a class="<%= path === 'product-list' ? 'active' : '' %>" href="/admin/product-list">Admin Products</a>
+                </li>
             </ul>
         </nav>
     </header>
